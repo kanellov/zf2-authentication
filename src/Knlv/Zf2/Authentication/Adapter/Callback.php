@@ -11,7 +11,7 @@
 
 namespace Knlv\Zf2\Authentication\Adapter;
 
-use Zend\Authentication\Adapter\AdapterInterface;
+use Zend\Authentication\Adapter\AbstractAdapter;
 use Zend\Authentication\Exception\InvalidArgumentException;
 use Zend\Authentication\Result;
 
@@ -20,7 +20,7 @@ use Zend\Authentication\Result;
  * The Callback function must return the identity on authentication success
  * and false on authentication failure.
  */
-class Callback implements AdapterInterface
+class Callback extends AbstractAdapter
 {
     protected $callback;
 
@@ -46,8 +46,8 @@ class Callback implements AdapterInterface
      */
     public function authenticate()
     {
-        if (false !== ($identity = call_user_func($this->callback))) {
-            return new Result(Result::SUCCESS, $identity, array('Authentication succes'));
+        if (false !== ($identity = call_user_func($this->callback, $this->getIdentity(), $this->getCredential()))) {
+            return new Result(Result::SUCCESS, $identity, array('Authentication success'));
         }
 
         return new Result(Result::FAILURE, null, array('Authentication failure'));
