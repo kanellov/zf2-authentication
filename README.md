@@ -12,7 +12,7 @@ Create a composer.json file in your project root:
 
     {
         "require": {
-            "kanellov/zf2-permissions": "dev-master"
+            "kanellov/zf2-authentication": "dev-master"
         }
     }
 
