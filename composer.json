@@ -1,0 +1,34 @@
+{
+    "name": "kanellov/zf2-authentication",
+    "description": "Zend Framework 2 Authentication extras",
+    "version": "0.0.1",
+    "type": "library",
+    "keywords": [
+        "zend framework", "authentication"
+    ],
+    "homepage": "https://github.com/kanellov/zf2-authentication",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vassilis Kanellopoulos",
+            "email": "contact@kanellov.com",
+            "homepage": "http://kanellov.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "contact@kanellov.com",
+        "issues": "https://github.com/kanellov/zf2-authentication/issues",
+        "source": "https://github.com/kanellov/zf2-authentication"
+    },
+    "require": {
+        "php": ">=5.3.23",
+        "zendframework/zend-authentication": "~2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Knlv\\": "src"
+        }
+    }
+
+}
