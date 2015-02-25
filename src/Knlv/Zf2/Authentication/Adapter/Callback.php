@@ -3,9 +3,9 @@
 /**
  * Knlv\Zf2\Authentication\Adapter\Callback
  *
- * @link https://github.com/kanellov/config-merge
+ * @link https://github.com/kanellov/zf2-authentication
  * @copyright Copyright (c) 2015 Vassilis Kanellopoulos - contact@kanellov.com
- * @license https://raw.githubusercontent.com/kanellov/config-merge/master/LICENSE
+ * @license https://raw.githubusercontent.com/kanellov/zf2-authentication/master/LICENSE
  */
 
 
