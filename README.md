@@ -1,5 +1,7 @@
 # zf2-authentication
 
+[![Build Status](https://travis-ci.org/kanellov/zf2-authentication.svg?branch=develop)](https://travis-ci.org/kanellov/zf2-authentication)
+
 Zend Framework authentication extras
 
 ## Installation
