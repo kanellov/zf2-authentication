@@ -1,7 +1,6 @@
 {
     "name": "kanellov/zf2-authentication",
     "description": "Zend Framework 2 Authentication extras",
-    "version": "0.0.2",
     "type": "library",
     "keywords": [
         "zend framework", "authentication"
